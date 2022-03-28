@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App" id="App">
       <div>El valor de mi contador es: {contador}</div>
-      <button
+      <button id="boton"
         onClick={() => {
           // Llamamos al hook y le asignamos otro valor al contador
           setContador(contador + 1);
@@ -33,6 +33,20 @@ function App() {
       >
         Aumentar contador
       </button>
+      
+      <button id="boton"onClick={()=>{
+        setContador(contador-1);
+       }}
+       >
+         Disminuye contador
+         </button>
+
+      <button id="boton"onClick={()=>{
+        setContador(0)
+      }}
+      >
+        Reinicia contador
+        </button>
       <input
         value={nombre}
         onChange={(event) => {
@@ -40,6 +54,8 @@ function App() {
         }}
         placeholder="Ingresa tu nombre"
       />
+      
+
       <Boton parametro1={"Hola soy el parametro"}/>
       <span>Mi nombre es: {nombre}</span>
       <p>Mi nombre es: {nombre}</p>

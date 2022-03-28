@@ -6,10 +6,10 @@ export function Boton({ parametro1 }) {
     <button
       className="boton-componente"
       onClick={() => {
-        setTextoBoton("Soy Jordi");
+        setTextoBoton("Soy Regina");
       }}
     >
-      {parametro1}
+      {textoBoton}
     </button>
   );
 }
